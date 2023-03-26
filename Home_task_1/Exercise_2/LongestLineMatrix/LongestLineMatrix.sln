@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestLineMatrix", "LongestLineMatrix.csproj", "{DF18FD91-53E0-48D4-A270-91C6767696D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF18FD91-53E0-48D4-A270-91C6767696D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF18FD91-53E0-48D4-A270-91C6767696D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF18FD91-53E0-48D4-A270-91C6767696D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF18FD91-53E0-48D4-A270-91C6767696D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D43DA13-2C0D-4B53-83BA-84E1D8D347CB}
+	EndGlobalSection
+EndGlobal
