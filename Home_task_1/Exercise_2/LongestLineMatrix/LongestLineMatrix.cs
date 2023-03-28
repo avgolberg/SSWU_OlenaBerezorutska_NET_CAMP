@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LongestLineMatrix
 {
     internal class LongestLineMatrix
-    {
+    {// чому порушені принципи інкапсуляції?
         private struct Index
         {
             public int i;
@@ -21,10 +21,11 @@ namespace LongestLineMatrix
         }
 
         private struct LongestLine
-        {
+        {// чому обрані для додатних величин знакові типи?
             public int color;
             public int count;
             public Index startIndex;
+            // Ще бракує напрямку, горизонтального чи вертикального, чи діагонального
 
             public LongestLine(int color, int count, Index startIndex)
             {
@@ -61,12 +62,12 @@ namespace LongestLineMatrix
             for (int i = 0; i < _matrix.GetLength(0); i++)
             {
                 for (int j = 0; j < _matrix.GetLength(1); j++)
-                {
+                {// чарівних констант треба уникати
                     _matrix[i, j] = rand.Next(0, 17);
                 }
             }
         }
-
+// ToString Замість цього методу...
         public void PrintMatrix()
         {
             for (int i = 0; i < _matrix.GetLength(0); i++)
@@ -112,7 +113,8 @@ namespace LongestLineMatrix
         public override string ToString()
         {
             if (longestCount == 0) Find();
-
+// Точку вже треба розуміти як лінію міри 1.
+            
             if (longestLines.Count == 0) return "Nothing found";
 
             var sb = new StringBuilder();
