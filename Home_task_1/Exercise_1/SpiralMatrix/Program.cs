@@ -3,7 +3,7 @@
 namespace SpiralMatrix
 {
     class Program
-    {
+    {Вітаю. Перше завдання по створенню репозиторію Ви виконали.
         static void Main(string[] args)
         {
             var spiralMatrix = new SpiralMatrix(5, 6);
