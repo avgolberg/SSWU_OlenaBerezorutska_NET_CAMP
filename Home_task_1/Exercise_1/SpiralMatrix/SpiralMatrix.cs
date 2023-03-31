@@ -43,6 +43,7 @@ namespace SpiralMatrix
 
             for (int n = 1; n <= count; n++)
             {
+                //лаконічний код, але швидкодія в 4 циклах буде швидша
                 _matrix[i, j] = n;
 
                 if (j == columnsMin && i != rowsMax) i++;
