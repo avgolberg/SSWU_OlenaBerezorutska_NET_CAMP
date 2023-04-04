@@ -7,13 +7,12 @@ namespace WaterTower
         private WaterTower _waterTower;
         private User _user;
 
-        public Simulator(WaterTower waterTower, User user)
+        public Simulator(double maxWaterLevel, double pumpPower, double userConsuption)
         {
-            //тут же не потрібні конктруктори копіювання?
-            _waterTower = waterTower;
-            _user = user;
+            _waterTower = new WaterTower(maxWaterLevel, new Pump(pumpPower));
+            _user = new User(userConsuption);
 
-            user.WaterIsNeeded += OnWaterIsNeeded;
+            _user.WaterIsNeeded += OnWaterIsNeeded;
         }
 
        

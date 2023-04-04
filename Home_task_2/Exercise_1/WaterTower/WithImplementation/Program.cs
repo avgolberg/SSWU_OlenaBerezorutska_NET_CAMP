@@ -8,10 +8,7 @@ namespace WaterTowerWithImplementation
         {
             try
             {
-                Pump pump = new Pump(6);
-                WaterTower waterTower = new WaterTower(100, pump);
-                User user = new User(40);
-                Simulator simulator = new Simulator(waterTower, user);
+                Simulator simulator = new Simulator(100, 6, 40);
                 simulator.Simulate();
             }
             catch(Exception ex)
@@ -19,7 +16,6 @@ namespace WaterTowerWithImplementation
                 Console.WriteLine("Sorry, an unexpected error ocured");
                 Console.WriteLine(ex.Message);
             }
-            
         }
     }
 }
