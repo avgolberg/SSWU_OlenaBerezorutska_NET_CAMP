@@ -59,12 +59,12 @@ namespace CubeWithHoles
             _middle = _size / 2;
             _cube = new int[_size, _size, _size];
             _holes = new List<Hole>();
-
+// оскільки у Вас немає іншого конструктора, то Ви приречені використовувати тільки випадкове заповнення. Краще цей метод тут не викликати. 
             Fill();
         }
-
+// Алгоритмічно це неправильно...Можу спробувати пояснити в розмові...
         public void FindHoles()
-        {
+        {// список треба очищати. Інакше, якщо цей метод буде застосовуватись кілька разів, будуть повтори.
             int countHorizontalLine = 0;
             int countVerticalLine = 0;
             int countDeepLine = 0;
@@ -74,7 +74,7 @@ namespace CubeWithHoles
                 for (uint j = 0; j < _size; j++)
                 {
                     for (uint k = 0; k < _size; k++)
-                    {
+                    { 
                         if (_cube[i, j, k] == 0)
                             countHorizontalLine++;
 
