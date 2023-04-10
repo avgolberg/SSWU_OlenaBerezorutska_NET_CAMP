@@ -31,12 +31,13 @@ namespace WorkWithText
                 return null;
 
             int index = _text.IndexOf(substring);
+            // Якщо немає першого, то можна не шукати другого.
             index = _text.IndexOf(substring, index + substring.Length);
             return (index != -1) ? index : null;
         }
 
         public int WordsStartWithUpper()
-        {
+        {// а якщо між словами довільна кількість пропусків?
             var words = _text.Split();
             int count = 0;
             foreach (string word in words)
