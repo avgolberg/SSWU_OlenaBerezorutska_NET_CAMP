@@ -30,7 +30,7 @@ namespace WaterTower
             if (WaterIsNeeded != null)
                 WaterIsNeeded(this, EventArgs.Empty);
         }
-
+// Не зрозуміло, що мав би виконувати цей метод.
         public void GetWater(double consuption)
         {
 
