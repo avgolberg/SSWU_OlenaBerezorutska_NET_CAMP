@@ -15,7 +15,8 @@ namespace WaterTower
             _user.WaterIsNeeded += OnWaterIsNeeded;
         }
 
-       
+       // Не думаю, що це метод цього класу.Симулятор мав би надавати користувачу можливість стартувати та закінчувати спостереження, активувати користувача іт.д. що можна було б 
+        // що можна було б зробити у вигляді меню.
         public void OnWaterIsNeeded(object source, EventArgs e)
         {
             //supply water to user
