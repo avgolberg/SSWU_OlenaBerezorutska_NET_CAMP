@@ -1,0 +1,50 @@
+У тексті, знайти всі правильні електронні адреси, а також лексеми, які не є
+правильними електронними адресами, але містять в своєму записі символ @.
+
+Електронні адреси часто використовуються як логін для входу на вебсайт. Доступні й інші методи перевірки, такі як перевірка номера мобільного телефону та перевірка факсу prettyandsimple@example.com, disposable.style.email.with+symbol@example.com... Чи є дійсною ця адреса very.common@example.com?
+
+Дійсні електронні адреси:
+
+disposable.style.email.with+symbol@example.com
+
+other.email-with-hyphen@example.com
+
+fully-qualified-domain@example.com
+
+user.name+tag+sorting@example.com (може перейти до вхідних повідомлень user.name@example.com залежно від поштового сервера)
+
+x@example.com (локальна частина з однією буквою)
+
+example-indeed@strange-example.com
+
+example@s.example (див. Список Інтернет-доменів вищого рівня)
+
+"john..doe"@example.org (цитується подвійна крапка)
+
+#!$%&'*+-/=?^_`{}|~@example.org
+
+admin@mailserver1
+
+Недійсні адреси електронної пошти:
+
+Abc.example.com (без символу @)
+
+A@b@c@example.com (тільки один @ дозволений поза лапок)
+
+a"b(c)d,e:f;g<h>i[j\k]l@example.com (жоден із спеціальних символів у цій локальній частині не допускається поза лапок)
+
+just"not"right@example.com
+
+this is"not\allowed@example.com (пробіли, лапки та косої риски можуть існувати лише тоді, коли в цитованих рядках і передує зворотна косої риски)
+
+this\ still\"not\\allowed@example.com (навіть якщо уникнути (передує зворотній косої риси), пробіли, лапки та косої риски все одно повинні міститись лапками)
+
+1234567890123456789012345678901234567890123456789012345678901234+x@example.com (місцева частина довша 64 символів)
+
+i_like_underscore@but_its_not_allow_in_this_part.example.com (Підкреслення заборонено в частині домену)
+
+john.doe@example..com
+
+co((m)mentjohn.smith@example.com та (comment)john.smith@example.com
+А також (Hello world!)john.smith@example.com
+john.smith@(c(o)mment)exa(mp)le.com та john.smith@example.com(comment)
