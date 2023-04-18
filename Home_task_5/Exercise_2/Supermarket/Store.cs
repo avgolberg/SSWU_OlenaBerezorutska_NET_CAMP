@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace Supermarket
@@ -35,14 +33,11 @@ namespace Supermarket
             }
             return new Box(Name, Boxes);
         }
-        //  "|Технічний відділ||Комп'ютери|||Аксесуари||Побутова техніка|Продуктовий відділ||Молочний відділ||М'ясний відділ"
+
         public void CreateStructure(string str)
         {
             List<(string, int)> structure = CountNesting(str);
             List<List<(string, int)>> result = new List<List<(string, int)>>();
-
-            //int count = 0;
-            //var res = GetRange(structure, result[count].Count, 1);
 
             int index = 0;
             int nextIndex = 1;
@@ -55,20 +50,43 @@ namespace Supermarket
                 if (nextIndex == -1)
                 {
                     result.Add(structure.GetRange(index, structure.Count - index));
+                    break;
                 }
+                result.Add(structure.GetRange(index, nextIndex- index));
                 index += 1;
-                result.Add(structure.GetRange(index, structure.Count - nextIndex + 1));
             }
 
             List<List<StoreSection>> storeSections = new List<List<StoreSection>>();
             List<StoreSection> sections = new List<StoreSection>();
-            foreach (var item in result)
+            for (int i = 0; i < result.Count; i++)
             {
-                foreach (var s in item)
+                for (int j = 0; j < result[i].Count; j++)
                 {
-                    sections.Add(new StoreSection(s.Item1));
+                    sections.Add(new StoreSection(result[i][j].Item1));
                 }
                 storeSections.Add(sections);
+                sections = new List<StoreSection>();
+            }
+
+            int rootJ = 0;
+            for (int i = 0; i < result.Count; i++)
+            {
+                for (int j = 0; j < result[i].Count - 1; j++)
+                {
+                    if (result[i][j].Item2 < result[i][j + 1].Item2)
+                    {
+                        storeSections[i][j].AddSubsection(storeSections[i][j + 1]);
+                    }
+                    else
+                    {
+                        storeSections[i][rootJ].AddSubsection(storeSections[i][j+1]);
+                    }
+                }
+            }
+
+            for (int i = 0; i < storeSections.Count; i++)
+            {
+                AddSection(storeSections[i][0]);
             }
         }
 
