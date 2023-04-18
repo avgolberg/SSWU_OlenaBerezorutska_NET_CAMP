@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Gardens
 {
-    class Garden
+    class GardenTS
     {
         private Random random = new Random();
 
@@ -18,14 +18,14 @@ namespace Gardens
 
         public double FenceLength { get; private set; }
 
-        public Garden(List<Location> trees)
+        public GardenTS(List<Location> trees)
         {
             _trees = new List<Location>(trees);
             _treesCount = trees.Count;
 
             AddFence();
         }
-        public Garden(int width, int height, int treesCount)
+        public GardenTS(int width, int height, int treesCount)
         {
             _fieldWidth = width;
             _fieldHeight = height;
@@ -126,27 +126,27 @@ namespace Gardens
             return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
         }
 
-        public static bool operator >(Garden garden1, Garden garden2)
+        public static bool operator >(GardenTS garden1, GardenTS garden2)
         {
             return garden1.FenceLength > garden2.FenceLength;
         }
-        public static bool operator <(Garden garden1, Garden garden2)
+        public static bool operator <(GardenTS garden1, GardenTS garden2)
         {
             return garden1.FenceLength < garden2.FenceLength;
         }
-        public static bool operator >=(Garden garden1, Garden garden2)
+        public static bool operator >=(GardenTS garden1, GardenTS garden2)
         {
             return garden1.FenceLength >= garden2.FenceLength;
         }
-        public static bool operator <=(Garden garden1, Garden garden2)
+        public static bool operator <=(GardenTS garden1, GardenTS garden2)
         {
             return garden1.FenceLength <= garden2.FenceLength;
         }
-        public static bool operator ==(Garden garden1, Garden garden2)
+        public static bool operator ==(GardenTS garden1, GardenTS garden2)
         {
             return garden1.FenceLength == garden2.FenceLength;
         }
-        public static bool operator !=(Garden garden1, Garden garden2)
+        public static bool operator !=(GardenTS garden1, GardenTS garden2)
         {
             return !(garden1 == garden2);
         }
@@ -161,23 +161,6 @@ namespace Gardens
             sb.Append($"Fence Length: {FenceLength:f}\n");
             sb.Append("Fence: " + string.Join(", ", _bestOrder) + "\n");
             return sb.ToString();
-        }
-    }
-
-    class Location
-    {
-        public double X { get; private set; }
-        public double Y { get; private set; }
-
-        public Location(double x, double y)
-        {
-            X = x;
-            Y = y;
-        }
-
-        public override string ToString()
-        {
-            return $"({X:f}, {Y:f})";
         }
     }
 }
