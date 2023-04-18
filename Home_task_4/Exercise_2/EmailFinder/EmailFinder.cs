@@ -109,6 +109,8 @@ namespace EmailFinder
 
         private bool BracketsBalanced(string str)
         {
+            if (!str.Contains('(')) return false;
+
             List<char> brackets = new List<char>();
             foreach (char c in str)
             {
