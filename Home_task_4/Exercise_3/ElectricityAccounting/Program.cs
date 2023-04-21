@@ -2,7 +2,7 @@
 using System.Text;
 
 namespace ElectricityAccounting
-{
+{// Молодець!
     class Program
     {
         static void Main(string[] args)
