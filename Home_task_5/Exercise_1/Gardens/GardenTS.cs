@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Gardens
-{
+{//Потрібно було будувати опуклу оболонку. У Вас будується огорожа, але вона не оптимальна(
     class GardenTS
     {
         private Random random = new Random();
