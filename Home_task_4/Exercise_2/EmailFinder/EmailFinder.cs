@@ -89,7 +89,7 @@ namespace EmailFinder
 
             if (domain.HasSpecialChars(new char[] { '.', '-', '(', ')' }))
                 return false;
-
+// Чарівні константи слід іменувати і виносити за межі коду!
             //довжина
             if (local.Length > 64 || domain.Length > 253 || (local.Length + domain.Length) > 256)
                 return false;
@@ -108,7 +108,7 @@ namespace EmailFinder
         }
 
         private bool BracketsBalanced(string str)
-        {
+        {// для підрахунку балансу дужок не треба їх зберігати в список. Достатньо до лічильника додавати 1, коли відкрита дужка і -1, коли закрита. Але прицьому лічильник на кожній ітерації має залишатися >=0
             if (!str.Contains('(')) return false;
 
             List<char> brackets = new List<char>();
