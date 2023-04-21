@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 
 namespace BracketsFinder
-{
+{\\Дуже добре.
     class BracketsFinder
     {
         private List<string> _lines = new List<string>();
