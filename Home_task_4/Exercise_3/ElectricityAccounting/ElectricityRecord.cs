@@ -4,7 +4,7 @@ using System.Globalization;
 namespace ElectricityAccounting
 {
     class ElectricityRecord
-    {
+    {// Краще, коли розмірами полів можна керувати ззовні.
         public static string Header = string.Format("{0,-10} {1,-12} {2, -12} {3,-12} {4,-12} {5,-12} {6,-12}", "Квартира", "Власник", "Місяць", "Вхідні", "Вихідні", "До сплати", "Дата зняття");
 
         public static string ShortHeader = string.Format("{0, -12} {1,-12} {2,-12} {3,-12} {4,-12}\n", "Місяць", "Вхідні", "Вихідні", "До сплати", "Дата зняття");
