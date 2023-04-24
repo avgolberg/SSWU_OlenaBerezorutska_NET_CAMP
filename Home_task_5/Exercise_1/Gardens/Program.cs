@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+//Бали: 92	10	10	90	95	98	75	100 Вітаю Вас. Ви в другому турі.
 namespace Gardens
 {
     class Program
