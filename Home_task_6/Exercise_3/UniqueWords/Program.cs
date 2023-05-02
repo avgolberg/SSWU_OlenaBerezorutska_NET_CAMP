@@ -2,7 +2,7 @@
 using System.Linq;
 
 namespace UniqueWords
-{
+{// Оцінка за завдання 98 балів.
     class Program
     {
         static void Main(string[] args)
