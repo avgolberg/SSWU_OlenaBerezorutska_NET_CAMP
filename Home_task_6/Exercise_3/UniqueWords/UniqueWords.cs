@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace UniqueWords
-{
+{// чудово!
     class UniqueWords
     {
         private string _text;
