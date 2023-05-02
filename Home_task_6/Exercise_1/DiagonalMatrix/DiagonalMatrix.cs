@@ -2,7 +2,7 @@
 using System.Text;
 
 namespace DiagonalMatrix
-{
+{// Щодо застосування інтерфейсу, то все чітко. Молодець.
     class DiagonalMatrix : IEnumerable
     {
         private int _size;
@@ -39,7 +39,7 @@ namespace DiagonalMatrix
             int i = 0, j = 0;
             bool isUp = false;
             int counter = 0;
-
+// Не помилка, але рекомендую для відомого числа повторень використовувати цикл for.
             while (counter < _size * _size)
             {
                 if (isUp)
@@ -53,7 +53,7 @@ namespace DiagonalMatrix
 
                     if (i < 0 && j <= _size - 1)
                         i = 0;
-
+// ви на кожній вітці перепитуєте чи це не останній елемент. Можна оптимізувати.
                     if (j == _size)
                     {
                         i += 2;
