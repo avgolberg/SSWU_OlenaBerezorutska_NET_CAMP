@@ -49,7 +49,7 @@ namespace SortArrays
         }
 
         public IEnumerable<int> Merge()
-        {
+        {// тут треба обговорити в індивідіальному порядку.
             var enumerators = _arrays.Select(a => a.GetEnumerator()).ToList();
             enumerators.RemoveAll(e => !e.MoveNext());
 
