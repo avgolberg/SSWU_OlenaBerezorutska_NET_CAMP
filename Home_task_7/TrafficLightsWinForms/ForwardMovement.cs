@@ -6,7 +6,7 @@ using System.Timers;
 namespace TrafficLights
 {
     public class ForwardMovement : ITrafficPattern
-    {
+    {// Ви не зможете міняти цю константу ззовні. А треба б.
         private const int SEC = 1000;
         private Timer timer;
         private List<TrafficLight> _trafficLights = new List<TrafficLight>();
