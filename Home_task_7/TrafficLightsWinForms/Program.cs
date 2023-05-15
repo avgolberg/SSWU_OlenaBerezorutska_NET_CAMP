@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using TrafficLights;
 
 namespace TrafficLightsWinForms
-{
+{// сумарний бал 97.
     static class Program
     {
         [STAThread]

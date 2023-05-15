@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using TrafficLights;
 
 namespace TrafficLightsWinForms
-{
+{// тут краще було організувати класичну форму паттерна Посередника. Буду розказувати.
     public partial class FormDisplay : Form, IDisplayTrafficPattern
     {
         // private System.Windows.Forms.Timer timer;
