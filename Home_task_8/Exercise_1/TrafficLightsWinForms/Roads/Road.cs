@@ -5,10 +5,10 @@ namespace TrafficLights
 {
     public abstract class Road : IRoad
     {
-        private List<IRoadLane> _roadLanes;
+        protected List<IRoadLane> _roadLanes;
         public IEnumerable<IRoadLane> RoadLanes => _roadLanes;
 
-        private RoadLocationType _locationType;
+        protected RoadLocationType _locationType;
         public RoadLocationType LocationType => _locationType;
 
         public Road(List<IRoadLane> roadLanes, RoadLocationType locationType)

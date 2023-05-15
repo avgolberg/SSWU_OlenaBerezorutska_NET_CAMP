@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TrafficLights.IntersectionSimulator">
+    <Position X="25.75" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACBAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>IntersectionSimulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.TrafficLightColorTime" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACEAAAAAAAAAAAAAAAAACAAAAAAABA=</HashCode>
+      <FileName>Traffic Lights\TrafficLightColorTime.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.OrdinaryTrafficLight" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAACAAAAAAABA=</HashCode>
+      <FileName>Traffic Lights\OrdinaryTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.AdditionalSectionsTrafficLight" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="18" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAEEAAECAAAAAAQAAhAgAAIABA=</HashCode>
+      <FileName>Traffic Lights\AdditionalSectionsTrafficLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.AdditionalSectionTrafficLight" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="15" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Traffic Lights\AdditionalSectionTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.YellowLight" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="11" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAABA=</HashCode>
+      <FileName>Traffic Lights\Colors\YellowLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.RedLight" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAABA=</HashCode>
+      <FileName>Traffic Lights\Colors\RedLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.GreenLight" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAABA=</HashCode>
+      <FileName>Traffic Lights\Colors\GreenLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.TrafficLightRoad" BaseTypeListCollapsed="true">
+    <Position X="17" Y="13.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\TrafficLightRoad.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.Road" BaseTypeListCollapsed="true">
+    <Position X="15" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAQgAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Roads\Road.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.TrafficLightRoadLane" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\Road Lanes\TrafficLightRoadLane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.RoadLane" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\Road Lanes\RoadLane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.Intersection" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="8.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAQQAAAAAAACAAAAAgAA=</HashCode>
+      <FileName>Intersections\Intersection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.ConsoleDisplay" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgCAAAAAAAAAAAAAAMAAEAIAAAAAAAAAA=</HashCode>
+      <FileName>Displays\ConsoleDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLightsWinForms.FormDisplay" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAACAAAAACAAAACAAAEQAVAIAAAAAQAAAA=</HashCode>
+      <FileName>Displays\FormDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.ComplexMovement">
+    <Position X="22.25" Y="12.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Traffic Patterns\ComplexMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsWinForms.Displays.ComplexIntersectionForm">
+    <Position X="31.5" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAACAAAAACAAAACAAAEQAVAIAAAAAQAAAA=</HashCode>
+      <FileName>Displays\ComplexIntersectionForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.ForwardMovement" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="10.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Traffic Patterns\ForwardMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.TrafficPattern">
+    <Position X="22.25" Y="6.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAEAABgEAEAAAAAAAAAAAJAQAAAACAAAAAAAA=</HashCode>
+      <FileName>Traffic Patterns\TrafficPattern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.TrafficLight">
+    <Position X="1.75" Y="11" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIIAAAAAAAAAAAEAAAAAAEAAAhAgAAICBA=</HashCode>
+      <FileName>Traffic Lights\TrafficLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrafficLights.OrdinaryRoadLane">
+    <Position X="10.5" Y="13.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\Road Lanes\OrdinaryRoadLane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLights.OrdinaryRoad">
+    <Position X="15.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\OrdinaryRoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TrafficLights.ITrafficLightColor">
+    <Position X="6.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Traffic Lights\Colors\ITrafficLightColor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.IRoad">
+    <Position X="15" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Roads\IRoad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.IRoadLane">
+    <Position X="11.5" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\Road Lanes\IRoadLane.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.IIntersection">
+    <Position X="18.5" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Intersections\IIntersection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.IDisplayTrafficPattern">
+    <Position X="28.75" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Displays\IDisplayTrafficPattern.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.IContainTrafficLight">
+    <Position X="13.5" Y="11.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Roads\IContainTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrafficLights.ITrafficLight">
+    <Position X="1.75" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAhAgAAIAAA=</HashCode>
+      <FileName>Traffic Lights\ITrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.ICloneable">
+    <Position X="4.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="TrafficLights.IAdditionalSectionsTrafficLight">
+    <Position X="1.75" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Traffic Lights\IAdditionalSectionsTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TrafficLights.RoadLocationType">
+    <Position X="15" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>Roads\RoadLocationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TrafficLights.MovementType">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQIAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAQI=</HashCode>
+      <FileName>Roads\Road Lanes\MovementType.cs</FileName>
+      <NewMemberFileName>Roads\MovementType.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

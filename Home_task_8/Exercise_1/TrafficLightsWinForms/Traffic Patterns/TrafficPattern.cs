@@ -10,9 +10,10 @@ namespace TrafficLights
         private int SEC = 1000;
         protected Timer timer;
         protected List<ITrafficLight> _trafficLights = new List<ITrafficLight>();
-       
+        public IEnumerable<ITrafficLight> TrafficLights => _trafficLights;
+
         protected IIntersection _intersection;
-        public IIntersection Intersection => _intersection;
+
 
         public TrafficPattern(int redTime, int yellowTime, int greenTime)
         {

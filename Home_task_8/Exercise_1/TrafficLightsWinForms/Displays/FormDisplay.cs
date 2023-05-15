@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrafficLights;
 
-namespace TrafficLightsWinForms.Displays
+namespace TrafficLightsWinForms
 {
-    public partial class ComplexIntersectionForm : Form, IDisplayTrafficPattern
+    public partial class FormDisplay : Form, IDisplayTrafficPattern
     {
-        private TrafficPattern _trafficPattern;
+        // private System.Windows.Forms.Timer timer;
 
-        public ComplexIntersectionForm(TrafficPattern trafficPattern, double interval = 1000)
+        private TrafficPattern _trafficPattern;
+        public FormDisplay(TrafficPattern trafficPattern, double interval = 1000)
         {
             InitializeComponent();
 
@@ -46,7 +43,7 @@ namespace TrafficLightsWinForms.Displays
 
         public new void Show()
         {
-            List<ITrafficLight> trafficLights = (List<ITrafficLight>)_trafficPattern.Intersection.TrafficLights;
+            List<ITrafficLight> trafficLights = (List<ITrafficLight>)_trafficPattern.TrafficLights;
 
             tl1.Image = GetTrafficLightImage(trafficLights[0]);
             tl2.Image = GetTrafficLightImage(trafficLights[1]);

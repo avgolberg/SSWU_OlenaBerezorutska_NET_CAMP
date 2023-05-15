@@ -93,7 +93,7 @@
     <Compile Include="Roads\Road Lanes\RoadLane.cs" />
     <Compile Include="Roads\Road Lanes\TrafficLightRoadLane.cs" />
     <Compile Include="Roads\RoadLocationType.cs" />
-    <Compile Include="Traffic Lights\MovementType.cs" />
+    <Compile Include="Roads\Road Lanes\MovementType.cs" />
     <Compile Include="Traffic Patterns\ComplexMovement.cs" />
     <Compile Include="Traffic Patterns\ForwardMovement.cs" />
     <Compile Include="Displays\IDisplayTrafficPattern.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TrafficLights
 {
@@ -43,7 +44,7 @@ namespace TrafficLights
 
         public object Clone()
         {
-            return new AdditionalSectionsTrafficLight(TrafficLight, (AdditionalSectionTrafficLight[])AdditionalSections);
+            return new AdditionalSectionsTrafficLight(TrafficLight, AdditionalSections.ToArray());
         }
 
         public override string ToString()

@@ -16,7 +16,7 @@ namespace TrafficLights
             _roads = roads ?? throw new ArgumentNullException(nameof(roads));
         }
 
-        public IEnumerable<ITrafficLight> GetTrafficLights()
+        private IEnumerable<ITrafficLight> GetTrafficLights()
         {
             if (_trafficLights.Count != 0) return _trafficLights;
 
