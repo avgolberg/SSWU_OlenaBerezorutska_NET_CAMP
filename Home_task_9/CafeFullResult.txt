@@ -1,0 +1,103 @@
+Vetrovs (Sweets, True) COOKS Тірамісу (4 хв) 16:03:18
+
+Curtis (Pizzas, True) COOKS Піца Гавайська (4 хв) 16:03:18
+
+Workman (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:18
+
+Smith (Sweets, True) COOKS Десерт Райський (3 хв) 16:03:18
+
+Saris (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:18
+
+Philips (Pizzas, True) COOKS Піца 4 сири (5 хв) 16:03:18
+
+Levin (Pizzas, True) COOKS Піца 4 сири (5 хв) 16:03:18
+
+- Workman (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:19
+
+- Saris (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:19
+
+Workman (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:19
+
+Saris (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:19
+
+- Workman (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:20
+
+- Saris (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:20
+
+Saris (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:20
+
+Workman (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:20
+
+- Smith (Sweets, False) ENDS to cook Десерт Райський (3 хв) 16:03:21
+
+Smith (Sweets, True) COOKS Тірамісу (4 хв) 16:03:21
+
+- Workman (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:21
+
+- Saris (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:21
+
+Saris (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:21
+
+Workman (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:21
+
+- Curtis (Pizzas, False) ENDS to cook Піца Гавайська (4 хв) 16:03:22
+
+- Vetrovs (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:22
+
+Curtis (Pizzas, True) COOKS Піца Гавайська (4 хв) 16:03:22
+
+Vetrovs (Sweets, True) COOKS Тірамісу (4 хв) 16:03:22
+
+- Workman (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:22
+
+- Saris (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:22
+
+Saris (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:22
+
+Workman (Drinks, True) COOKS Сік ананасовий (1 хв) 16:03:22
+
+- Philips (Pizzas, False) ENDS to cook Піца 4 сири (5 хв) 16:03:23
+
+- Levin (Pizzas, False) ENDS to cook Піца 4 сири (5 хв) 16:03:23
+
+Levin (Pizzas, True) COOKS Піца 4 сири (5 хв) 16:03:23
+
+Philips (Pizzas, True) COOKS Піца 4 сири (5 хв) 16:03:23
+
+- Workman (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:23
+
+- Saris (Drinks, False) ENDS to cook Сік ананасовий (1 хв) 16:03:23
+
+- Smith (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:25
+
+Smith (Sweets, True) COOKS Десерт Райський (3 хв) 16:03:25
+
+- Curtis (Pizzas, False) ENDS to cook Піца Гавайська (4 хв) 16:03:26
+
+Curtis (Pizzas, True) COOKS Піца Гавайська (4 хв) 16:03:26
+
+- Vetrovs (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:26
+
+Vetrovs (Sweets, True) COOKS Тірамісу (4 хв) 16:03:26
+
+- Levin (Pizzas, False) ENDS to cook Піца 4 сири (5 хв) 16:03:28
+
+- Philips (Pizzas, False) ENDS to cook Піца 4 сири (5 хв) 16:03:28
+
+Levin (Pizzas, True) COOKS Піца Гавайська (4 хв) 16:03:28
+
+- Smith (Sweets, False) ENDS to cook Десерт Райський (3 хв) 16:03:28
+
+Smith (Sweets, True) COOKS Тірамісу (4 хв) 16:03:28
+
+- Curtis (Pizzas, False) ENDS to cook Піца Гавайська (4 хв) 16:03:30
+
+- Vetrovs (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:30
+
+Vetrovs (Sweets, True) COOKS Тірамісу (4 хв) 16:03:30
+
+- Levin (Pizzas, False) ENDS to cook Піца Гавайська (4 хв) 16:03:32
+
+- Smith (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:32
+
+- Vetrovs (Sweets, False) ENDS to cook Тірамісу (4 хв) 16:03:34

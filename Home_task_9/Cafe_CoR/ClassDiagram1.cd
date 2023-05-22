@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Cafe_CoR.Order">
+    <Position X="11" Y="3.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cafe_CoR.Kitchen">
+    <Position X="5" Y="3.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAVAAEAIAABAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Kitchen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cafe_CoR.Dish">
+    <Position X="15.25" Y="3.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAEAEAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Dish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cafe_CoR.CookBase">
+    <Position X="1.25" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAABAAAAAAAAAAAAAABABCAAAAAAEAAAAAAACAA=</HashCode>
+      <FileName>CookBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Cafe_CoR.Cook">
+    <Position X="1.25" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Cook.cs</FileName>
+      <NewMemberFileName>CookBase.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Cafe_CoR.ICookHandler">
+    <Position X="1.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAABABCAAAAAAEAAAAAAACAA=</HashCode>
+      <FileName>ICookHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Cafe_CoR.Category">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
