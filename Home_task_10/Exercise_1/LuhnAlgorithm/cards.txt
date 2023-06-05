@@ -1,0 +1,6 @@
+# American Express # card_number = “378282246310005”
+# MasterCard # card_number = “5555555555554444”
+# MasterCard # card_number = “5375414110193462”
+# MasterCard # card_number = “5375414110193442”
+# Visa # card_number = “4561261212345464”
+# Visa # card_number = “4561261212345467”
