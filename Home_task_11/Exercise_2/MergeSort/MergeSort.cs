@@ -11,9 +11,6 @@ namespace MergeSort
 
         public MergeSort(string path)
         {
-            string tempDir = @"..\..\..\Temps";
-            Directory.CreateDirectory(tempDir);
-
             if (string.IsNullOrWhiteSpace(path))
                 throw new ArgumentException("Path can not be null or empty");
 
@@ -22,7 +19,10 @@ namespace MergeSort
 
             if (new FileInfo(path).Length == 0)
                 throw new ArgumentException("File can not be empty");
-            
+
+            string tempDir = @"..\..\..\Temps";
+            Directory.CreateDirectory(tempDir);
+
             PartialSort(path);
             ExternalMerge(path, Directory.GetFiles(tempDir));
 

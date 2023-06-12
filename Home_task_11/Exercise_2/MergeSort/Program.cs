@@ -9,7 +9,7 @@ namespace MergeSort
             try
             {
                 string data = @"..\..\..\integers.txt";
-                IntegersGenerator generator = new IntegersGenerator(data, 150, 0, 100);
+                IntegersGenerator generator = new IntegersGenerator(data, 150);
                 MergeSort mergeSort = new MergeSort(data);
             }
             catch (Exception ex)
