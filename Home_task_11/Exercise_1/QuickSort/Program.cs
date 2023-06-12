@@ -8,7 +8,7 @@ namespace QuickSort
         {
             try
             {
-                var arr = new int[] { 70, 80, 30, 90, 40, 50, 10 };
+                var arr = new int[] { 73, 14, 62, 8, 56, 31, 96, 14, 30, 34, 38, 82, 56, 92, 78, 53, 91, 47, 58, 78 };
                 QuickSort<int> quickSort = new QuickSort<int>(arr, new FirstPivotStrategy<int>());
                 quickSort.Sort();
                 Console.WriteLine(quickSort);

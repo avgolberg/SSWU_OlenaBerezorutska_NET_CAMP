@@ -15,7 +15,6 @@ namespace QuickSort
         {
             _stopwatch = new Stopwatch();
             _originalItems = new List<T>(items);
-            _items = new List<T>(items);
             ChangePivotStrategy(pivotStrategy);
         }
         public void ChangePivotStrategy(IPivotStrategy<T> pivotStrategy)
@@ -28,6 +27,7 @@ namespace QuickSort
 
         public void Sort()
         {
+            _items = new List<T>(_originalItems);
             _stopwatch.Start();
             QuickSortAlgorithm(_items, 0, _items.Count - 1);
             _stopwatch.Stop();
