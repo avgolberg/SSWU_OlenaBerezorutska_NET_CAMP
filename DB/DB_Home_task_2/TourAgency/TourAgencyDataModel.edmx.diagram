@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98da17f21f994f3fa769badbe7f8da98" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="TourAgencyModel.City" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Connection" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Country" Width="1.5" PointX="1.875" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Excursion" Width="1.5" PointX="6.125" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.FoodType" Width="1.5" PointX="8.125" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.GroupTour" Width="1.5" PointX="2.375" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Hotel" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Person" Width="1.5" PointX="6.375" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Representative" Width="1.5" PointX="4.375" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Review" Width="1.5" PointX="2.375" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.RoomType" Width="1.5" PointX="10.375" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.Route" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TourAgencyModel.HotelRoomType" Width="1.5" PointX="8.125" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="TourAgencyModel.FK_Cities_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Connections_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Excursions_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Hotels_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Connections_Routes" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Hotels_FoodTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_GroupTours_Representatives" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_GroupTours_Routes" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Reviews_GroupTours" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_HotelRoomType_Hotels" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Representatives_People" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_Reviews_People" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.FK_HotelRoomType_RoomTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TourAgencyModel.PersonGroupTour" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TourAgencyModel.RecreationType" Width="1.5" PointX="8.125" PointY="4.875" />
+        <AssociationConnector Association="TourAgencyModel.ExcursionRecreationType" />
+        <AssociationConnector Association="TourAgencyModel.ConnectionExcursion" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="TourAgency.AddTourGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TourAgency"
+        mc:Ignorable="d"
+        Title="Tour Group Creation"
+        Height="600"
+        Width="500"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="TextBox"
+               BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+            <Setter Property="FontSize"
+                    Value="14" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <ItemsControl x:Name="peopleIC">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="20">
+                                <TextBox Text="{Binding Name}"
+                                         materialDesign:HintAssist.Hint="Name"/>
+                                <TextBox Text="{Binding Surname}"
+                                         materialDesign:HintAssist.Hint="Surname" />
+                                <TextBox Text="{Binding Patronymic}"
+                                         materialDesign:HintAssist.Hint="Patronymic"/>
+                                <DatePicker FontSize="14" Padding="5"
+                                            SelectedDate="{Binding Birthday}"
+                                            Style="{DynamicResource MaterialDesignFloatingHintDatePicker}"
+                                            materialDesign:HintAssist.Hint="Birthday" />
+                                <TextBox Text="{Binding PhoneNumber}"
+                                         materialDesign:HintAssist.Hint="PhoneNumber" />
+                                <TextBox Text="{Binding Email}"
+                                         materialDesign:HintAssist.Hint="Email" />
+                                <Button Content="Delete Person"
+                                        Margin="10"
+                                        Style="{DynamicResource MaterialDesignOutlinedButton}"
+                                        Click="deletePersonBTN_Click" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Button Style="{DynamicResource MaterialDesignFloatingActionMiniLightButton}"
+                        Width="40"
+                        Height="40"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="addFields_Click">
+                    <materialDesign:PackIcon Kind="Plus"
+                                             Height="24"
+                                             Width="24" />
+                </Button>
+                <Button Content="Save Group"
+                        Style="{DynamicResource MaterialDesignOutlinedButton}"
+                        Margin="20"
+                        FontSize="14"
+                        VerticalAlignment="Bottom"
+                        Click="addBTN_Click" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

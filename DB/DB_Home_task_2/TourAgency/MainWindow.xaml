@@ -1,0 +1,125 @@
+﻿<Window x:Class="TourAgency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TourAgency"
+        mc:Ignorable="d"
+        Title="Tour Agency Route Creation"
+        Height="800"
+        Width="800">
+    <Window.Resources>
+        <Style TargetType="DatePicker"
+               BasedOn="{StaticResource MaterialDesignFloatingHintDatePicker}">
+            <Setter Property="FontSize"
+                    Value="14" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="Padding"
+                    Value="5" />
+        </Style>
+        <Style TargetType="Separator">
+            <Setter Property="Background"
+                    Value="DeepSkyBlue" />
+            <Setter Property="Margin"
+                    Value="20" />
+        </Style>
+        <Style TargetType="DataGrid"
+               BasedOn="{StaticResource MaterialDesignDataGrid}">
+            <Setter Property="HorizontalAlignment"
+                    Value="Center" />
+            <Setter Property="AutoGenerateColumns"
+                    Value="False" />
+            <Setter Property="IsReadOnly"
+                    Value="True" />
+        </Style>
+    </Window.Resources>
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <Label Content="Route Creation"
+                   FontSize="18"
+                   HorizontalAlignment="Center" />
+            <Separator />
+            <StackPanel Margin="20 10">
+                <DataGrid x:Name="routeGrid">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}"
+                                            Header="Name" />
+                        <DataGridTextColumn Binding="{Binding Description}"
+                                            Header="Description" />
+                        <DataGridCheckBoxColumn Binding="{Binding IsPublic}"
+                                                Header="Public Route" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Add/Change Route"
+                        Margin="0 20 0 10"
+                        Style="{DynamicResource MaterialDesignOutlinedButton}"
+                        Click="addRouteBTN_Click" />
+            </StackPanel>
+            <Separator />
+            <StackPanel Margin="20 10"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <DatePicker SelectedDate="{Binding StartDate}"
+                            materialDesign:HintAssist.Hint="Start Date"
+                            SelectedDateChanged="DatePicker_SelectedDateChanged" />
+                <DatePicker SelectedDate="{Binding EndDate}"
+                            materialDesign:HintAssist.Hint="End Date"
+                            SelectedDateChanged="DatePicker_SelectedDateChanged" />
+                <TextBlock x:Name="dateDiff"
+                           VerticalAlignment="Center"
+                           Padding="5"
+                           Margin="5" />
+            </StackPanel>
+            <Separator />
+            <StackPanel Margin="20 10">
+                <DataGrid x:Name="peopleGrid">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Name}"
+                                            Header="Name" />
+                        <DataGridTextColumn Binding="{Binding Surname}"
+                                            Header="Surname" />
+                        <DataGridTextColumn Binding="{Binding Patronymic}"
+                                            Header="Patronymic" />
+                        <DataGridTextColumn Binding="{Binding Birthday, StringFormat='{} dd.MM.yyyy'}"
+                                            Header="Birthday" />
+                        <DataGridTextColumn Binding="{Binding PhoneNumber}"
+                                            Header="Phone Number" />
+                        <DataGridTextColumn Binding="{Binding Email}"
+                                            Header="Email" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Add/Change Tour Group"
+                        Margin="0 20 0 10"
+                        Style="{DynamicResource MaterialDesignOutlinedButton}"
+                        Click="addGroupBTN_Click" />
+            </StackPanel>
+            <Separator />
+            <StackPanel Margin="20 10">
+                <DataGrid x:Name="connectionsGrid">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding CityOrder}"
+                                            Header="City Order" />
+                        <DataGridTextColumn Header="Country"
+                                            Binding="{Binding Country.Name}" />
+                        <DataGridTextColumn Header="City"
+                                            Binding="{Binding City.Name}" />
+                        <DataGridTextColumn Header="Hotel"
+                                            Binding="{Binding Hotel.Name}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Add/Change Connections"
+                        Style="{DynamicResource MaterialDesignOutlinedButton}"
+                        Click="addConnectionsBTN_Click"
+                        Margin="0 20 0 10" />
+            </StackPanel>
+            <Separator />
+            <Button Content="Save Group Route"
+                    Style="{DynamicResource MaterialDesignOutlinedButton}"
+                    Click="saveRouteBTN_Click"
+                    Margin="20" />
+        </StackPanel>
+    </ScrollViewer>
+</Window>
