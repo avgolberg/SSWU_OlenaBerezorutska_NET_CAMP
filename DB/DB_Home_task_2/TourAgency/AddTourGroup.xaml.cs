@@ -31,8 +31,18 @@ namespace TourAgency
         {
             foreach (Person person in peopleIC.Items)
             {
+                if (string.IsNullOrWhiteSpace(person.Name) || string.IsNullOrWhiteSpace(person.Surname) || string.IsNullOrWhiteSpace(person.PhoneNumber) || string.IsNullOrWhiteSpace(person.Email) || person.Birthday > DateTime.Today)
+                {
+                    MessageBox.Show($"Person Data Input Error - {person.Name} ({peopleIC.Items.IndexOf(person) + 1})", "Person Error");
+                    return;
+                }
+            }
+
+            foreach (Person person in peopleIC.Items)
+            {
                 db.People.AddOrUpdate(person);
             }
+
             db.SaveChanges();
             DialogResult = true;
         }
